@@ -64,7 +64,6 @@ class ODBC {
 				}
 
 				foreach ($this->QueryParameters as $column => $value) {
-					print_r_pre($this->QueryParameters);
 					$this->Query->bindParam($parametersType ? intval($column) : ":" . $column, $this->QueryParameters[$column]);
 				}
 			}
