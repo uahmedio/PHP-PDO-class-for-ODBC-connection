@@ -1,7 +1,7 @@
 <?php 
 require_once "/odbc_log_class.php";
 
-class DB {
+class ODBC {
 
 	private $server;
 	private $Host;
