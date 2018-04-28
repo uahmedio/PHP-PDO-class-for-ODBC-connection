@@ -17,7 +17,7 @@ class DB {
 	public $queryCount = 0;
 
 	public function __construct() {
-		$config = parse_ini_file("/config_Odbc.ini");
+		$config = parse_ini_file("/credentials.ini");
 		$this->Host = $config['host'];
 		$this->DBuser = $config['username'];
 		$this->DBpass = $config['password'];
