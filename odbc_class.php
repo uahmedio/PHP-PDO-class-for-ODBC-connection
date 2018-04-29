@@ -93,7 +93,7 @@ class ODBC {
 	}
 
 	public function column($query, $params = null) {
-		$this->init($query, $params = null);
+		$this->init($query, $params);
 		$resultColumn = $this->Query->fetchAll(PDO::FETCH_COLUMN);
 		$this->rowCount = $this->Query->rowCount();
 		$this->columnCount = $this->Query->columnCount();
